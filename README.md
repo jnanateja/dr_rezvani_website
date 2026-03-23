@@ -1,6 +1,6 @@
-# Fred Rezvani GYN LLC — React Site
+# Fred Rezvani GYN LLC website
 
-A premium lavender-themed Vite + React website for Fred Rezvani GYN LLC.
+React + Vite website for Fred Rezvani GYN LLC.
 
 ## Run locally
 
@@ -9,15 +9,30 @@ npm install
 npm run dev
 ```
 
-## Build for production
+## Build locally
 
 ```bash
 npm run build
 ```
 
-## Notes
+## Deploy on GitHub Pages
 
-- Responsive and mobile-ready
-- Includes mobile menu and sticky call button
-- Uses the provided doctor image in `src/assets/headshot.jpeg`
-- Practice info is stored in `src/App.jsx`
+This project is already configured for the repository:
+
+`https://github.com/jnanateja/dr_rezvani_website`
+
+What is already included:
+- `vite.config.js` with the correct base path
+- `HashRouter` for GitHub Pages routing
+- `.github/workflows/deploy.yml` for automatic deployment
+
+### Final steps on GitHub
+1. Push this project to the `main` branch.
+2. In GitHub, open **Settings → Pages**.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Push any change and GitHub will deploy automatically.
+
+### Live URL
+After the workflow succeeds, the site will be available at:
+
+`https://jnanateja.github.io/dr_rezvani_website/`
