@@ -1,112 +1,105 @@
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
-import { practiceInfo, services, faqs } from '../App';
+import { practiceInfo, serviceTiles } from '../siteContent';
 
 export default function HomePage() {
-  const featuredServices = services.slice(0, 6);
-
   return (
     <>
       <Hero />
 
       <section className="section">
-        <div className="container split-section info-layout">
-          <article className="info-panel premium-card">
-            <div className="eyebrow">About Dr. Rezvani</div>
-            <h2>Gynecology care in Ridgewood</h2>
+        <div className="container about-practice-layout">
+          <div className="about-practice-intro section-heading compact-heading">
+            <div className="eyebrow">About The Practice</div>
+            <h2>Comprehensive Gynecologic and Women&apos;s Health Care</h2>
             <p>
-              Dr. Rezvani graduated from St. George’s University School of Medicine in 1983 and
-              practices in Ridgewood, New Jersey. He is affiliated with {practiceInfo.hospital}.
+              Providing medical care for women of all ages, including preventive care, diagnostic
+              procedures in a professional clinical setting.
             </p>
-            <p>
-              The practice provides gynecology care for routine visits, preventive exams, and
-              common gynecologic concerns.
-            </p>
-            <Link className="text-link" to="/about">Learn more about Dr. Rezvani</Link>
-          </article>
+          </div>
 
-          <article className="info-panel premium-card">
-            <div className="eyebrow">Practice Information</div>
-            <h2>Office information</h2>
-            <div className="feature-stack">
-              <div className="feature-item">
-                <strong>Specialty</strong>
-                <span>Gynecology</span>
+          <div className="split-section info-layout">
+            <article className="info-panel premium-card">
+              <h3>Services</h3>
+              <p>
+                Our office provides comprehensive gynecologic and women&apos;s health services,
+                including:
+              </p>
+              <ul className="services-summary-list">
+                <li>Preventive Gynecologic Care</li>
+                <li>Office-Based Procedures</li>
+                <li>Hormone &amp; Menopause Care</li>
+                <li>Family Planning Services</li>
+              </ul>
+              <Link className="button services-card-button" to="/services">
+                View all services
+              </Link>
+            </article>
+
+            <article className="info-panel premium-card">
+              <h3>Office Information</h3>
+              <div className="feature-stack">
+                <div className="feature-item">
+                  <strong>Location</strong>
+                  <span>{practiceInfo.fullAddress}</span>
+                </div>
+                <div className="feature-item">
+                  <strong>Insurance</strong>
+                  <span>{practiceInfo.insuranceLine}</span>
+                </div>
+                <div className="feature-item">
+                  <strong>Appointments</strong>
+                  <span>Call the office for scheduling, availability, and visit questions.</span>
+                </div>
               </div>
-              <div className="feature-item">
-                <strong>Services offered</strong>
-                <span>Routine gynecology care, preventive visits, and labiaplasty consultation.</span>
-              </div>
-              <div className="feature-item">
-                <strong>Location</strong>
-                <span>{practiceInfo.fullAddress}</span>
-              </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
 
       <section className="section section-muted">
         <div className="container">
           <div className="section-heading compact-heading">
-            <div className="eyebrow">Services</div>
-            <h2>Gynecology services</h2>
+            <div className="eyebrow">Areas Of Care</div>
+            <h2>Comprehensive Women&apos;s Health Care</h2>
             <p>
-              The practice offers a range of services for preventive care and common gynecologic concerns.
+              Care is organized to provide clear, comprehensive services supporting women&apos;s
+              health at every stage of life.
             </p>
           </div>
           <div className="card-grid">
-            {featuredServices.map((service) => (
-              <article key={service.title} className="service-card premium-card">
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-              </article>
-            ))}
-          </div>
-          <div className="section-action">
-            <Link className="button button-secondary" to="/services">View all services</Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container split-section callout-split">
-          <div className="callout-card premium-card">
-            <div className="eyebrow">Insurance</div>
-            <h2>Insurance information</h2>
-            <p>
-              The office accepts <strong>Aetna</strong> and also welcomes <strong>out-of-network</strong>{' '}
-              patients. Please call the office with coverage questions before your visit.
-            </p>
-          </div>
-          <div className="callout-card premium-card">
-            <div className="eyebrow">Appointments</div>
-            <h2>Contact the office</h2>
-            <p>
-              For appointments, service questions, or general office information, please contact
-              the office directly.
-            </p>
-            <a className="button" href={practiceInfo.phoneHref}>{practiceInfo.phoneDisplay}</a>
+            <article className="service-card premium-card">
+              <h3>Gynecological Care</h3>
+              <p>
+                Preventive and diagnostic care addressing gynecologic concerns for women at every
+                stage of life.
+              </p>
+            </article>
+            <article className="service-card premium-card">
+              <h3>Office Procedures</h3>
+              <p>
+                In-office evaluations and procedures performed for accurate diagnosis and effective
+                treatment.
+              </p>
+            </article>
+            <article className="service-card premium-card">
+              <h3>Hormone and Menopause Care</h3>
+              <p>
+                Personalized care addressing hormonal changes, menopause symptoms, and long-term
+                health concerns.
+              </p>
+            </article>
+            <article className="service-card premium-card">
+              <h3>Family Planning &amp; Birth Control</h3>
+              <p>
+                Counseling and management options including contraceptive care and reproductive
+                planning.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section className="section section-muted">
-        <div className="container">
-          <div className="section-heading compact-heading">
-            <div className="eyebrow">Frequently Asked Questions</div>
-            <h2>Helpful information for patients</h2>
-          </div>
-          <div className="faq-grid">
-            {faqs.map((faq) => (
-              <article key={faq.q} className="faq-card premium-card">
-                <h3>{faq.q}</h3>
-                <p>{faq.a}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }

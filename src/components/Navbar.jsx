@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { practiceInfo } from '../App';
+import { practiceInfo } from '../siteContent';
 
 const navItems = [
   { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
   { label: 'Services', to: '/services' },
-  { label: 'New Patients', to: '/new-patients' },
-  { label: 'Resources', to: '/resources' },
+  { label: 'Patient Information', to: '/new-patients' },
   { label: 'Contact', to: '/contact' },
 ];
 
@@ -18,6 +17,7 @@ export default function Navbar() {
     const onResize = () => {
       if (window.innerWidth > 980) setOpen(false);
     };
+
     window.addEventListener('resize', onResize);
     return () => window.removeEventListener('resize', onResize);
   }, []);
@@ -34,8 +34,8 @@ export default function Navbar() {
       <div className="container topbar-inner">
         <Link className="brand" to="/" aria-label={practiceInfo.practiceName}>
           <span className="brand-kicker">Gynecology</span>
-          <div className="brand-title">Dr. Fred Rezvani</div>
-          <div className="brand-subtitle">{practiceInfo.practiceName}</div>
+          <div className="brand-title">{practiceInfo.doctorName}</div>
+          <div className="brand-subtitle">{practiceInfo.cityStateZip}</div>
         </Link>
 
         <nav className="nav-menu desktop-nav" aria-label="Primary">
@@ -53,7 +53,7 @@ export default function Navbar() {
         </nav>
 
         <div className="topbar-actions">
-          <a className="button button-small topbar-cta desktop-cta" href={practiceInfo.phoneHref}>
+          <a className="button button-small desktop-cta" href={practiceInfo.phoneHref}>
             Call {practiceInfo.phoneDisplay}
           </a>
 
@@ -89,7 +89,7 @@ export default function Navbar() {
           </nav>
           <div className="mobile-panel-footer">
             <a className="button" href={practiceInfo.phoneHref} onClick={() => setOpen(false)}>
-              Call {practiceInfo.phoneDisplay}
+              Call the Office
             </a>
           </div>
         </div>

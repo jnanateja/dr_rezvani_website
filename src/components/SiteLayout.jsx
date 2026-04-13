@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import { practiceInfo } from '../App';
+import { practiceInfo } from '../siteContent';
 
 export default function SiteLayout() {
   return (

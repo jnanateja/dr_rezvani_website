@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import headshot from '../assets/headshot.jpeg';
-import { practiceInfo } from '../App';
+import { practiceInfo } from '../siteContent';
 
 export default function Hero() {
   return (
@@ -9,33 +9,20 @@ export default function Hero() {
         <div className="hero-copy-wrap">
           <div className="eyebrow">Gynecology care in Ridgewood, New Jersey</div>
           <h1>
-            {practiceInfo.displayBrand}
+            Personalized women&apos;s health care
             <br />
-            <span className="accent-text">Gynecology</span>
+            <span className="accent-text">from Fred Rezvani, MD</span>
           </h1>
-          <p className="hero-copy">
-            {practiceInfo.practiceName} provides gynecology care for routine visits, preventive care,
-            and common gynecologic concerns, including labiaplasty consultation.
-          </p>
+
           <div className="hero-actions">
             <a className="button" href={practiceInfo.phoneHref}>Call {practiceInfo.phoneDisplay}</a>
-            <Link className="button button-secondary" to="/contact">Contact the Office</Link>
-          </div>
-          <div className="hero-meta">
-            <span>{practiceInfo.addressLine1}</span>
-            <span>{practiceInfo.cityStateZip}</span>
-            <span>{practiceInfo.insurance}</span>
+            <Link className="button button-secondary" to="/contact">Request Information</Link>
           </div>
         </div>
 
         <div className="hero-card premium-card">
           <div className="hero-portrait-wrap">
             <img src={headshot} alt={practiceInfo.doctorName} className="hero-image" />
-          </div>
-          <div className="hero-card-body">
-            <h3>{practiceInfo.doctorName}</h3>
-            <p>{practiceInfo.specialty}</p>
-            <p>Affiliated with {practiceInfo.hospital}</p>
           </div>
         </div>
       </div>

@@ -1,14 +1,15 @@
-import { faqs, practiceInfo } from '../App';
+import { faqs, practiceInfo } from '../siteContent';
 
 export default function ResourcesPage() {
   return (
     <section className="section page-hero">
       <div className="container">
-        <div className="section-heading">
+        <div className="section-heading align-left">
           <div className="eyebrow">Resources</div>
-          <h1>Patient information</h1>
+          <h1>Patient Information</h1>
           <p>
-            This page includes common questions patients may have before contacting or visiting the office.
+            These answers cover a few of the most common questions patients have before contacting
+            or visiting the office.
           </p>
         </div>
 
@@ -23,11 +24,11 @@ export default function ResourcesPage() {
 
         <div className="resource-banner premium-card">
           <div>
-            <div className="eyebrow">Need More Information?</div>
-            <h2>Call the office directly</h2>
+            <div className="mini-eyebrow">Need More Information?</div>
+            <h2>Call The Office Directly</h2>
             <p>
-              Online information can be helpful, but the office can answer questions about visits,
-              services, and scheduling.
+              The office can answer questions about services, scheduling, and insurance before
+              your visit.
             </p>
           </div>
           <a className="button" href={practiceInfo.phoneHref}>Call {practiceInfo.phoneDisplay}</a>
