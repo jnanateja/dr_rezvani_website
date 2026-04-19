@@ -1,3 +1,4 @@
+import InsurancePage from './pages/InsurancePage';
 import { Routes, Route } from 'react-router-dom';
 import SiteLayout from './components/SiteLayout';
 import HomePage from './pages/HomePage';
@@ -15,7 +16,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/new-patients" element={<NewPatientsPage />} />
-        <Route path="/insurance" element={<NewPatientsPage />} />
+        <Route path="/insurance" element={<InsurancePage />} />
         <Route path="/resources" element={<ResourcesPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Route>

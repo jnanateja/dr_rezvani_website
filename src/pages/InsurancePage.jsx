@@ -4,7 +4,7 @@ export default function InsurancePage() {
   return (
     <section className="section page-hero">
       <div className="container insurance-page">
-        <div className="section-heading align-left">
+        <div className="section-heading align-left fade-up">
           <div className="eyebrow">Insurance</div>
           <h1>Insurance Information</h1>
           <p>
@@ -14,7 +14,7 @@ export default function InsurancePage() {
         </div>
 
         <div className="split-section">
-          <article className="premium-card info-panel">
+          <article className="premium-card info-panel fade-up">
             <h2>Accepted Coverage</h2>
             <div className="insurance-list">
               {insuranceHighlights.map((item) => (
@@ -23,7 +23,7 @@ export default function InsurancePage() {
             </div>
           </article>
 
-          <article className="premium-card info-panel">
+          <article className="premium-card info-panel fade-up">
             <h2>Before Your Appointment</h2>
             <p>
               Please confirm participation, referral requirements, and billing details before your

@@ -1,73 +1,122 @@
 import headshot from '../assets/headshot.jpeg';
-import { practiceInfo } from '../siteContent';
+import { doctorProfile, practiceInfo } from '../siteContent';
 
 export default function AboutPage() {
   return (
     <section className="section page-hero">
       <div className="container about-page-stack">
-        <div className="section-heading align-left">
+        <div className="section-heading align-left fade-up">
           <div className="eyebrow">About</div>
           <h1>{practiceInfo.doctorName}</h1>
           <p>
-            Fred Rezvani, MD provides comprehensive gynecologic care in Ridgewood, New Jersey,
-            with an emphasis on careful evaluation, accurate diagnosis, and individualized
-            treatment.
+            A board-certified obstetrician and gynecologist providing women&apos;s health care in
+            Ridgewood, New Jersey.
           </p>
         </div>
 
         <div className="about-hero-grid">
-          <div className="portrait-panel premium-card about-portrait-card">
+          <div className="portrait-panel premium-card about-portrait-card fade-up">
             <img src={headshot} alt={practiceInfo.doctorName} className="portrait-image" />
           </div>
 
           <div className="about-main-stack">
-            <article className="about-copy premium-card">
-              <h2>Comprehensive Gynecologic Care for Women of all ages</h2>
+            <article className="about-copy premium-card fade-up">
+              <h2>About Dr. Fred F. Rezvani</h2>
               <p>
-                The practice provides preventive gynecologic care, menopause management,
-                office-based procedures, family planning services, and evaluation of both new and
-                ongoing health concerns. Care is provided with attention to clear communication,
-                appropriate treatment planning, and follow-up to support ongoing health and
-                well-being. Dr. Rezvani is committed to delivering high-quality gynecologic care
-                focused on patient safety, clinical accuracy, and long-term health.
+                Dr. Fred F. Rezvani is an obstetrician and gynecologist based in Ridgewood, New
+                Jersey. His professional background includes medical school in 1983, residency
+                training in Obstetrics &amp; Gynecology from 1984 to 1988, and board certification
+                in Obstetrics &amp; Gynecology.
+              </p>
+              <p>
+                His listed clinical focus includes gynecology-only care, minimally invasive
+                surgery, high-risk pregnancy, and congenital gynecologic anomalies. The practice
+                provides care with an emphasis on clear communication, careful evaluation, and
+                individualized treatment planning.
               </p>
               <div className="about-details-grid">
                 <div className="about-detail-item">
-                  <strong>Practice</strong>
-                  <span>{practiceInfo.practiceName}</span>
-                </div>
-                <div className="about-detail-item">
                   <strong>Specialty</strong>
-                  <span>{practiceInfo.specialty}</span>
+                  <span>Obstetrics &amp; Gynecology</span>
                 </div>
                 <div className="about-detail-item">
-                  <strong>Hospital Affiliation</strong>
-                  <span>{practiceInfo.hospital}</span>
+                  <strong>Board Certification</strong>
+                  <span>{doctorProfile.boardCertification}</span>
                 </div>
                 <div className="about-detail-item">
-                  <strong>Location</strong>
+                  <strong>Practice Location</strong>
                   <span>{practiceInfo.cityStateZip}</span>
+                </div>
+                <div className="about-detail-item">
+                  <strong>Castle Connolly Top Doctor Since</strong>
+                  <span>{doctorProfile.topDoctorSince}</span>
                 </div>
               </div>
             </article>
           </div>
         </div>
 
-        <div className="about-bottom-grid">
-          <article className="premium-card office-preview-copy">
-            <div className="mini-eyebrow">Approach To Care</div>
-            <h3>  </h3>
+        <div className="about-card-grid">
+          <article className="premium-card about-info-card fade-up">
+            <div className="mini-eyebrow">Profile</div>
+            <h3>Professional background</h3>
             <p>
-              
+              Dr. Rezvani provides obstetrics and gynecology care for patients in Ridgewood and
+              the surrounding northern New Jersey area.
             </p>
+            <div className="feature-stack">
+              <div className="feature-item">
+                <strong>Specialty</strong>
+                <span>Obstetrics &amp; Gynecology</span>
+              </div>
+              <div className="feature-item">
+                <strong>Board Certification</strong>
+                <span>{doctorProfile.boardCertification}</span>
+              </div>
+            </div>
           </article>
-          <article className="premium-card office-preview-copy">
-            <h3>Overview</h3>
-            <p>
-              Dr. Rezvani graduated from the St Georges University School of Medicine in 1983. He
-              works in Ridgewood, NJ and 1 other location and specializes in Obstetrics &
-              Gynecology. Dr. Rezvani is affiliated with The Valley Hospital.
-            </p>
+
+          <article className="premium-card about-info-card fade-up">
+            <div className="mini-eyebrow">Training</div>
+            <h3>Education and residency training</h3>
+            <div className="feature-stack">
+              <div className="feature-item">
+                <strong>Medical School</strong>
+                <span>{doctorProfile.medicalSchool}</span>
+              </div>
+              <div className="feature-item">
+                <strong>Residency</strong>
+                <span>{doctorProfile.residency}</span>
+              </div>
+            </div>
+          </article>
+
+          <article className="premium-card about-info-card fade-up">
+            <div className="mini-eyebrow">Clinical Focus</div>
+            <h3>Areas of expertise</h3>
+            <ul className="compact-list compact-list-spacious">
+              {doctorProfile.expertise.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </article>
+
+          <article className="premium-card about-info-card fade-up">
+            <div className="mini-eyebrow">Recognition</div>
+            <h3>Selected professional recognition</h3>
+            <div className="feature-stack">
+              <div className="feature-item">
+                <strong>Castle Connolly Top Doctor Since</strong>
+                <span>{doctorProfile.topDoctorSince}</span>
+              </div>
+              <div className="feature-item">
+                <ul className="compact-list">
+                  {doctorProfile.recognitions.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </article>
         </div>
       </div>

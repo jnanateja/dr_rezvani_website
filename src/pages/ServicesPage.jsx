@@ -4,7 +4,7 @@ export default function ServicesPage() {
   return (
     <section className="section page-hero">
       <div className="container">
-        <div className="section-heading align-left">
+        <div className="section-heading align-left fade-up">
           <div className="eyebrow">Services</div>
           <h1>Services</h1>
           <p>
@@ -15,7 +15,7 @@ export default function ServicesPage() {
 
         <div className="stacked-sections">
           {serviceCategories.map((section) => (
-            <section className="service-category premium-card" key={section.title}>
+            <section className="service-category premium-card fade-up" key={section.title}>
               <div className="service-category-head">
                 <div className="mini-eyebrow">Care Area</div>
                 <h2>{section.title}</h2>
@@ -23,7 +23,7 @@ export default function ServicesPage() {
               </div>
               <div className="service-list-grid">
                 {section.items.map((item) => (
-                  <div className="service-list-item" key={item}>
+                  <div className="service-list-item reveal" key={item}>
                     <span className="service-dot" />
                     <span>{item}</span>
                   </div>

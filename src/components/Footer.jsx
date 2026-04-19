@@ -13,6 +13,10 @@ export default function Footer() {
               <span>
                 Phone: <a href={practiceInfo.phoneHref}>{practiceInfo.phoneDisplay}</a>
               </span>
+              <span>Fax: {practiceInfo.faxDisplay}</span>
+              <span>
+                Email: <a href={practiceInfo.emailHref}>{practiceInfo.email}</a>
+              </span>
               <span>{practiceInfo.fullAddress}</span>
             </div>
           </div>

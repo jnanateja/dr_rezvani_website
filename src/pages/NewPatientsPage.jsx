@@ -30,7 +30,7 @@ export default function NewPatientsPage() {
   return (
     <section className="section page-hero">
       <div className="container">
-        <div className="section-heading align-left">
+        <div className="section-heading align-left fade-up">
           <div className="eyebrow">Patient Information</div>
           <h1>New Patients &amp; Insurance Information</h1>
           <p>
@@ -40,7 +40,7 @@ export default function NewPatientsPage() {
         </div>
 
         <div className="split-section info-layout">
-          <article className="info-panel premium-card">
+          <article className="info-panel premium-card fade-up">
             <h2>What To Bring</h2>
             <ul className="bullet-list">
               {firstVisitItems.map((item) => (
@@ -49,7 +49,7 @@ export default function NewPatientsPage() {
             </ul>
           </article>
 
-          <article className="info-panel premium-card">
+          <article className="info-panel premium-card fade-up">
             <h2>Need Help Before You Come In?</h2>
             <p>
               The office can assist with scheduling, general service questions, and insurance
@@ -60,7 +60,7 @@ export default function NewPatientsPage() {
         </div>
 
         <div className="section section-inner">
-          <div className="section-heading compact-heading">
+          <div className="section-heading compact-heading fade-up">
             <div className="eyebrow">Insurance</div>
             <h2>Coverage Information</h2>
             <p>
@@ -69,7 +69,7 @@ export default function NewPatientsPage() {
             </p>
           </div>
           <div className="split-section info-layout">
-            <article className="info-panel premium-card">
+            <article className="info-panel premium-card fade-up">
               <h3>Accepted Coverage</h3>
               <div className="insurance-list">
                 {insuranceHighlights.map((item) => (
@@ -78,7 +78,7 @@ export default function NewPatientsPage() {
               </div>
             </article>
 
-            <article className="info-panel premium-card">
+            <article className="info-panel premium-card fade-up">
               <h3>Before Your Appointment</h3>
               <p>
                 Please confirm participation, referral requirements, and billing details before
@@ -93,13 +93,13 @@ export default function NewPatientsPage() {
         </div>
 
         <div className="section section-inner">
-          <div className="section-heading compact-heading">
+          <div className="section-heading compact-heading fade-up">
             <div className="eyebrow">Patient Support</div>
             <h2>Helpful Information</h2>
           </div>
           <div className="card-grid">
             {supportItems.map((item) => (
-              <article className="service-card premium-card" key={item.title}>
+              <article className="service-card premium-card fade-up" key={item.title}>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </article>

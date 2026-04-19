@@ -4,7 +4,7 @@ export default function ResourcesPage() {
   return (
     <section className="section page-hero">
       <div className="container">
-        <div className="section-heading align-left">
+        <div className="section-heading align-left fade-up">
           <div className="eyebrow">Resources</div>
           <h1>Patient Information</h1>
           <p>
@@ -15,14 +15,14 @@ export default function ResourcesPage() {
 
         <div className="faq-grid">
           {faqs.map((faq) => (
-            <article key={faq.q} className="faq-card premium-card">
+            <article key={faq.q} className="faq-card premium-card fade-up">
               <h3>{faq.q}</h3>
               <p>{faq.a}</p>
             </article>
           ))}
         </div>
 
-        <div className="resource-banner premium-card">
+        <div className="resource-banner premium-card fade-up">
           <div>
             <div className="mini-eyebrow">Need More Information?</div>
             <h2>Call The Office Directly</h2>

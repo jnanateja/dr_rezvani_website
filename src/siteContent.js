@@ -5,14 +5,16 @@ export const practiceInfo = {
   displayBrand: 'Fred Rezvani, MD',
   phoneDisplay: '201-444-1600',
   phoneHref: 'tel:2014441600',
+  faxDisplay: '201-444-8774',
+  email: 'healthcare2000fr2@gmail.com',
+  emailHref: 'mailto:healthcare2000fr2@gmail.com',
   addressLine1: '119 Prospect Street, Suite 1',
   cityStateZip: 'Ridgewood, NJ 07450',
   fullAddress: '119 Prospect Street, Suite 1, Ridgewood, NJ 07450',
   specialty: 'Gynecology',
-  insuranceLine: 'Aetna and out-of-network benefits',
-  hospital: 'The Valley Hospital',
+  insuranceLine: 'Aetna and Cigna accepted',
   intro:
-    'Comprehensive gynecology care focused on clear communication, respectful treatment, and continuity of care.',
+    'Care is centered on clear evaluation, appropriate treatment, and continuity of care in an established office setting.',
   hours: [
     ['Monday', '9:00 AM - 5:00 PM'],
     ['Tuesday', '9:00 AM - 5:00 PM'],
@@ -21,6 +23,25 @@ export const practiceInfo = {
     ['Friday', '9:00 AM - 5:00 PM'],
     ['Saturday', 'Closed'],
     ['Sunday', 'Closed'],
+  ],
+};
+
+export const doctorProfile = {
+  topDoctorSince: '2009',
+  medicalSchool: 'Grenada, 1983',
+  residency: 'Lincoln Med & Mental Hlth Ctr, Obstetrics & Gynecology, 1984 - 1988',
+  boardCertification: 'Obstetrics & Gynecology',
+  expertise: [
+    'High-Risk Pregnancy',
+    'Minimally Invasive Surgery',
+    'Congenital Anomalies-Gynecologic',
+    'Gynecology Only',
+  ],
+  recognitions: [
+    'New York Magazine: Top Doctors, 2014-2025',
+    "Jersey's Best Magazine Top Doctors, 2010-2025",
+    "Jersey's Best - Top Doctors for Women's Health, 2011-2025",
+    'Top Doctors New York Metro Area digital guide, 2016-2023',
   ],
 };
 
@@ -91,7 +112,7 @@ export const serviceTiles = serviceCategories.map((category) => ({
 
 export const insuranceHighlights = [
   'Aetna',
-  'Out-of-network patients are welcome',
+  'Cigna',
   'Please call before your visit to confirm current participation and billing details',
 ];
 
