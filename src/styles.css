@@ -1582,7 +1582,8 @@ p {
   }
 
   .hero-image {
-    aspect-ratio: 4 / 3.65;
+    aspect-ratio: 479 / 600;
+    object-fit: contain;
   }
 
   .section {
@@ -2206,10 +2207,6 @@ p {
 
   .hero-doctor-line {
     font-size: 0.74em;
-  }
-
-  .hero-image {
-    aspect-ratio: 4 / 3.35;
   }
 
   .hero-card,
