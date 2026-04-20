@@ -6,7 +6,7 @@ export default function ResourcesPage() {
       <div className="container">
         <div className="section-heading align-left fade-up">
           <div className="eyebrow">Resources</div>
-          <h1>Patient Information</h1>
+          <h1>Resources</h1>
           <p>
             These answers cover a few of the most common questions patients have before contacting
             or visiting the office.

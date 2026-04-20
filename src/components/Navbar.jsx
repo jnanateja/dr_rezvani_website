@@ -3,10 +3,9 @@ import { Link, NavLink } from 'react-router-dom';
 import { practiceInfo } from '../siteContent';
 
 const navItems = [
-  { label: 'Home', to: '/' },
   { label: 'About', to: '/about' },
   { label: 'Services', to: '/services' },
-  { label: 'Patient Information', to: '/new-patients' },
+  { label: 'Testimonials', to: '/testimonials' },
   { label: 'Contact', to: '/contact' },
 ];
 

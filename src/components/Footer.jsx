@@ -8,14 +8,14 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-section footer-info-line">
             <h3>{practiceInfo.doctorName}</h3>
-            <p>{practiceInfo.cityStateZip}</p>
+            {/*<p>{practiceInfo.cityStateZip}</p>*/}
             <div className="footer-meta">
               <span>
                 Phone: <a href={practiceInfo.phoneHref}>{practiceInfo.phoneDisplay}</a>
               </span>
               <span>Fax: {practiceInfo.faxDisplay}</span>
               <span>
-                Email: <a href={practiceInfo.emailHref}>{practiceInfo.email}</a>
+              <a href={practiceInfo.emailHref}>{practiceInfo.email}</a>
               </span>
               <span>{practiceInfo.fullAddress}</span>
             </div>
@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="footer-links">
               <Link to="/about">About</Link>
               <Link to="/services">Services</Link>
-              <Link to="/new-patients">Patient Information</Link>
+              <Link to="/testimonials">Testimonials</Link>
               <Link to="/contact">Contact</Link>
             </div>
           </div>

@@ -8,10 +8,10 @@ export default function AboutPage() {
         <div className="section-heading align-left fade-up">
           <div className="eyebrow">About</div>
           <h1>{practiceInfo.doctorName}</h1>
-          <p>
+          {/*<p>
             A board-certified obstetrician and gynecologist providing women&apos;s health care in
             Ridgewood, New Jersey.
-          </p>
+          </p>*/}
         </div>
 
         <div className="about-hero-grid">

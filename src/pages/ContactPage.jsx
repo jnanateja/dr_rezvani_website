@@ -1,4 +1,30 @@
-import { practiceInfo } from '../siteContent';
+import { insuranceHighlights, practiceInfo } from '../siteContent';
+
+const insuranceNotes = [
+  'Confirm current participation before your visit.',
+  'Ask whether your plan requires a referral.',
+  'Bring your current card and subscriber details.',
+  'Call ahead with billing or coverage questions.',
+];
+
+const supportItems = [
+  {
+    title: 'Questions before your visit',
+    text: 'The office can help with general service questions, scheduling details, and what to bring.',
+  },
+  {
+    title: 'Insurance and billing',
+    text: 'Coverage details may change, so please verify your plan details before the appointment.',
+  },
+  {
+    title: 'Medical records',
+    text: 'Bring relevant test results, prior procedure information, and records from recent care when available.',
+  },
+  {
+    title: 'Medication list',
+    text: 'Include prescriptions, over-the-counter medications, supplements, and any allergies.',
+  },
+];
 
 export default function ContactPage() {
   const mapQuery = encodeURIComponent(practiceInfo.fullAddress);
@@ -12,13 +38,13 @@ export default function ContactPage() {
           <div className="eyebrow">Contact</div>
           <h1>Contact The Office</h1>
           <p>
-            For appointments, insurance questions, or general office information, please call the
-            practice directly.
+            For appointments, insurance questions, visit preparation, or general office
+            information, please call the practice directly.
           </p>
         </div>
 
-        <div className="premium-card contact-info-band fade-up">
-          <section className="contact-column contact-map-column" aria-labelledby="contact-map-title">
+        <div className="contact-info-band fade-up">
+          <section className="premium-card contact-column contact-map-column" aria-labelledby="contact-map-title">
             <div className="mini-eyebrow">Office Location</div>
             <h2 id="contact-map-title">Visit our Ridgewood office</h2>
             <div className="contact-map-embed">
@@ -39,7 +65,7 @@ export default function ContactPage() {
             </a>
           </section>
 
-          <section className="contact-column contact-hours-column" aria-labelledby="contact-hours-title">
+          <section className="premium-card contact-column contact-hours-column" aria-labelledby="contact-hours-title">
             <div className="mini-eyebrow">Office Hours</div>
             <h2 id="contact-hours-title">When to reach us</h2>
             <div className="contact-hours-list">
@@ -52,9 +78,9 @@ export default function ContactPage() {
             </div>
           </section>
 
-          <section className="contact-column contact-details-column" aria-labelledby="contact-details-title">
+          <section className="premium-card contact-column contact-details-column" aria-labelledby="contact-details-title">
             <div className="mini-eyebrow">Get In Touch</div>
-            <h2 id="contact-details-title">Reach our office directly</h2>
+            <h2 id="contact-details-title">For appointments, call our office directly</h2>
             <a className="button contact-phone-button" href={practiceInfo.phoneHref}>
               Call {practiceInfo.phoneDisplay}
             </a>
@@ -74,6 +100,63 @@ export default function ContactPage() {
               </div>
             </div>
           </section>
+        </div>
+
+        <div className="section section-inner">
+          <div className="section-heading compact-heading fade-up">
+            <div className="eyebrow">Insurance</div>
+            <h2>Coverage Information</h2>
+            <p>
+              Coverage details can change, so patients are encouraged to call the office before
+              their appointment with any insurance or billing questions.
+            </p>
+          </div>
+          <div className="split-section info-layout">
+            <article className="info-panel premium-card fade-up">
+              <h3>Accepted Coverage</h3>
+              <div className="insurance-list">
+                {insuranceHighlights.map((item) => (
+                  <div className="insurance-item" key={item}>{item}</div>
+                ))}
+              </div>
+            </article>
+
+            <article className="info-panel premium-card fade-up">
+              <h3>Before Your Appointment</h3>
+              <ul className="bullet-list">
+                {insuranceNotes.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <p className="patient-card-note">
+                Phone: <a href={practiceInfo.phoneHref}>{practiceInfo.phoneDisplay}</a>
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div className="section section-inner">
+          <div className="section-heading compact-heading fade-up">
+            <div className="eyebrow">Patient Support</div>
+            <h2>Helpful Information</h2>
+          </div>
+          <div className="card-grid">
+            {supportItems.map((item) => (
+              <article className="service-card premium-card fade-up" key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div className="resource-banner premium-card fade-up">
+          <div>
+            <div className="mini-eyebrow">Need Assistance?</div>
+            <h2>Questions before your appointment?</h2>
+            <p>Call the office for scheduling, insurance, or general visit questions.</p>
+          </div>
+          <a className="button" href={practiceInfo.phoneHref}>Call {practiceInfo.phoneDisplay}</a>
         </div>
       </div>
     </section>

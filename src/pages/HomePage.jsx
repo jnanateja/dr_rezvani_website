@@ -45,7 +45,7 @@ export default function HomePage() {
           <div className="about-practice-intro section-heading compact-heading fade-up">
             <div className="eyebrow">Welcome to the Office</div>
             <h2>Comprehensive Gynecology and Women's Health Care</h2>
-            {/*S<p>
+            {/*<p>
               Dr. Fred Rezvani provides office-based gynecology care for women of all ages,
               including preventive visits, evaluation of gynecologic concerns, menopause care, and
               selected in-office procedures.
@@ -95,7 +95,7 @@ export default function HomePage() {
         <div className="container">
           <div className="section-heading compact-heading fade-up">
             <div className="eyebrow">Areas of Care</div>
-            <h2>Comprehensive Women&apos;s Health Care</h2>
+            {/*<h2>Comprehensive Women&apos;s Health Care</h2>*/}
             {/*<p>
               Care is organized to provide clear, comprehensive services supporting women&apos;s
               health at every stage of life.
@@ -110,8 +110,8 @@ export default function HomePage() {
             ))}
           </div>
           <div className="section-action fade-up">
-            <Link className="button button-secondary" to="/new-patients">
-              Patient information
+            <Link className="button button-secondary" to="/contact">
+              Contact and visit information
             </Link>
           </div>
         </div>
