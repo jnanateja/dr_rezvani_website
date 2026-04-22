@@ -29,7 +29,8 @@ export const practiceInfo = {
 export const doctorProfile = {
   topDoctorSince: '2009',
   medicalSchool: 'Grenada, 1983',
-  residency: 'Lincoln Med & Mental Hlth Ctr, Obstetrics & Gynecology, 1984 - 1988',
+  residency: 'Lincoln Med & Mental Hlth Ctr, Obstetrics & Gynecology, 1983 - 1988',
+  chiefResident: '1987 - 1988',
   boardCertification: 'Obstetrics & Gynecology',
   expertise: [
     'High-Risk Pregnancy',

@@ -24,8 +24,8 @@ export default function AboutPage() {
               <p>
                 Dr. Fred F. Rezvani is an obstetrician and gynecologist based in Ridgewood, New
                 Jersey. His professional background includes medical school in 1983, residency
-                training in Obstetrics &amp; Gynecology from 1984 to 1988, and board certification
-                in Obstetrics &amp; Gynecology.
+                training in Obstetrics &amp; Gynecology from 1983 to 1988, serving as Chief
+                Resident from 1987 to 1988, and board certification in Obstetrics &amp; Gynecology.
               </p>
               <p>
                 His listed clinical focus includes gynecology-only care, minimally invasive
@@ -86,6 +86,10 @@ export default function AboutPage() {
               <div className="feature-item">
                 <strong>Residency</strong>
                 <span>{doctorProfile.residency}</span>
+              </div>
+              <div className="feature-item">
+                <strong>Chief Resident</strong>
+                <span>{doctorProfile.chiefResident}</span>
               </div>
             </div>
           </article>
