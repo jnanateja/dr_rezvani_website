@@ -1,6 +1,17 @@
 import { Link } from 'react-router-dom';
 import { createServiceSlug, practiceInfo, serviceCategories, visitReasons } from '../siteContent';
 
+const additionalPatientServices = [
+  {
+    title: 'In-House Lab Services',
+    text: 'Convenient in-office lab services are available through Accu Reference.',
+  },
+  {
+    title: 'Walk-In Blood Work',
+    text: 'No separate appointment is required for patients with blood work orders.',
+  },
+];
+
 export default function ServicesPage() {
   return (
     <section className="section page-hero services-page-shell">
@@ -8,10 +19,6 @@ export default function ServicesPage() {
         <div className="section-heading align-left fade-up services-page-heading">
           <div className="eyebrow">Services</div>
           <h1>Services</h1>
-          {/*<p>
-            Clear, office-based gynecologic care for routine concerns, in-office procedures,
-            menopause support, preventive visits, and follow-up when symptoms or screening results change.
-          </p>*/}
         </div>
 
         <div className="stacked-sections services-stacked-sections">
@@ -42,6 +49,22 @@ export default function ServicesPage() {
             </section>
           ))}
         </div>
+
+        <section className="section section-inner">
+          <div className="section-heading compact-heading align-left fade-up">
+            <div className="eyebrow">Additional Patient Services</div>
+            <h2>Office support services</h2>
+            <p>These in-office conveniences help make visits more efficient for patients.</p>
+          </div>
+          <div className="card-grid two-up-grid">
+            {additionalPatientServices.map((item) => (
+              <article key={item.title} className="service-card premium-card fade-up">
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </article>
+            ))}
+          </div>
+        </section>
 
         <section className="services-support-grid fade-up">
           <div className="premium-card services-support-card">

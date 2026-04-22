@@ -1,3 +1,4 @@
+import officeExteriorFront from '../assets/office-exterior-front.jpeg';
 import { insuranceHighlights, practiceInfo } from '../siteContent';
 
 const insuranceNotes = [
@@ -42,6 +43,21 @@ export default function ContactPage() {
             information, please call the practice directly.
           </p>
         </div>
+
+        <section className="contact-photo-banner premium-card fade-up">
+          <div className="contact-photo-copy">
+            <div className="mini-eyebrow">Office Location</div>
+            <h2>Find our Ridgewood office easily</h2>
+            <p>
+              The exterior photo below can help patients recognize the office building before
+              arriving for their visit.
+            </p>
+            <a className="button button-small" href={directionsHref} target="_blank" rel="noreferrer">
+              Driving directions
+            </a>
+          </div>
+          <img src={officeExteriorFront} alt="Exterior building of Dr. Rezvani's office" className="contact-banner-image" />
+        </section>
 
         <div className="contact-info-band fade-up">
           <section className="premium-card contact-column contact-map-column" aria-labelledby="contact-map-title">

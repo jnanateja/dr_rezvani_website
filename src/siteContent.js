@@ -12,7 +12,7 @@ export const practiceInfo = {
   cityStateZip: 'Ridgewood, NJ 07450',
   fullAddress: '119 Prospect Street, Suite 1, Ridgewood, NJ 07450',
   specialty: 'Gynecology',
-  insuranceLine: 'Aetna and Cigna accepted',
+  insuranceLine: 'Aetna, Cigna, and Blue Cross Blue Shield accepted',
   intro:
     'Care is centered on clear evaluation, appropriate treatment, and continuity of care in an established office setting.',
   hours: [
@@ -601,6 +601,7 @@ export const serviceTiles = serviceCategories.map((category) => ({
 
 export const insuranceHighlights = [
   'Aetna',
+  'Blue Cross Blue Shield',
   'Cigna',
   'Please call before your visit to confirm current participation and billing details',
 ];
