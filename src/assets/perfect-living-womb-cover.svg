@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 468" role="img" aria-labelledby="title desc">
+  <title id="title">The Perfect Living Womb book cover</title>
+  <desc id="desc">Red book cover with curved line pattern and white title and author text.</desc>
+  <rect width="333" height="468" fill="#c6493f"/>
+  <g fill="none" stroke="#7a3d45" stroke-width="4" opacity="0.78">
+    <path d="M62 -20C25 74 24 170 63 232c39 62 40 158 2 256"/>
+    <path d="M79 -20C42 74 41 170 80 232c39 62 40 158 2 256"/>
+    <path d="M96 -20C59 74 58 170 97 232c39 62 40 158 2 256"/>
+    <path d="M113 -20C76 74 75 170 114 232c39 62 40 158 2 256"/>
+    <path d="M130 -20C93 74 92 170 131 232c39 62 40 158 2 256"/>
+  </g>
+  <g fill="#f7f3ee" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="238" y="48" font-size="17" text-anchor="middle">Fred F Rezvani MD</text>
+    <text x="255" y="69" font-size="17" text-anchor="middle">FACOG</text>
+
+    <text x="181" y="165" font-size="16">A concise, informative</text>
+    <text x="181" y="186" font-size="16">guide to pregnancy and</text>
+    <text x="181" y="207" font-size="16">beyond from an OB/GYN</text>
+
+    <text x="42" y="279" font-size="22">The perfect living</text>
+    <text x="42" y="303" font-size="22">Womb, Conversations with</text>
+    <text x="42" y="327" font-size="22">my virtual pregnant</text>
+    <text x="42" y="351" font-size="22">patient</text>
+  </g>
+</svg>

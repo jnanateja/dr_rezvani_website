@@ -4,6 +4,7 @@ import { practiceInfo } from '../siteContent';
 import officeExamRoom from '../assets/office-exam-room.jpeg';
 import officeHallway from '../assets/office-hallway.jpeg';
 import officeExteriorFront from '../assets/office-exterior-front.jpeg';
+import perfectLivingWombCover from '../assets/perfect-living-womb-cover.jpg';
 
 const homepageServices = [
   {
@@ -188,11 +189,18 @@ export default function HomePage() {
 
       <section className="section section-muted">
         <div className="container published-author-panel premium-card fade-up">
-          <div>
+          <div className="published-author-cover-wrap">
+            <img
+              src={perfectLivingWombCover}
+              alt="Cover of The Perfect Living Womb: Conversations with My Virtual Pregnant Patient"
+              className="published-author-cover"
+            />
+          </div>
+          <div className="published-author-copy">
             <div className="mini-eyebrow">Published Author</div>
             <h2>The Perfect Living Womb</h2>
             <p>
-              Dr. Rezvani is the author of <em>The Perfect Living Womb: Conversations with a
+              Dr. Rezvani is the author of <em>The Perfect Living Womb: Conversations with My
               Virtual Pregnant Patient</em>, a prenatal guide published in 2020 and available on
               Amazon in paperback and e-book formats.
             </p>
@@ -200,7 +208,7 @@ export default function HomePage() {
           <div className="services-cta-actions">
             <a
               className="button"
-              href="https://www.amazon.com/perfect-Conversations-virtual-pregnant-patient-ebook/dp/B08KPRKSPP/"
+              href="https://www.amazon.com/perfect-Conversations-virtual-pregnant-patient/dp/B089CQK28Y"
               target="_blank"
               rel="noreferrer"
             >

@@ -2,6 +2,7 @@ import headshot from '../assets/headshot.jpeg';
 import officeSign from '../assets/office-sign.jpeg';
 import officeHallway from '../assets/office-hallway.jpeg';
 import officeExamRoom from '../assets/office-exam-room.jpeg';
+import perfectLivingWombCover from '../assets/perfect-living-womb-cover.jpg';
 import { doctorProfile, practiceInfo } from '../siteContent';
 
 export default function AboutPage() {
@@ -124,27 +125,39 @@ export default function AboutPage() {
         </div>
 
         <section className="premium-card publication-card fade-up">
-          <div className="mini-eyebrow">Publications</div>
-          <h2>The Perfect Living Womb</h2>
-          <p className="publication-subtitle">
-            <em>A Prenatal Guide for Preparing for Pregnancy and What to Expect</em>
-          </p>
-          <p>
-            Dr. Rezvani is the author of <em>The Perfect Living Womb: Conversations with a Virtual
-            Pregnant Patient</em>, a prenatal guide developed to help patients prepare for
-            pregnancy and better understand what to expect throughout each stage.
-          </p>
-          <p>
-            Published in 2020, the book is available in paperback and e-book formats on Amazon.
-          </p>
-          <a
-            className="button button-small"
-            href="https://www.amazon.com/perfect-Conversations-virtual-pregnant-patient-ebook/dp/B08KPRKSPP/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View on Amazon
-          </a>
+          <div className="publication-book-layout">
+            <div className="publication-cover-wrap">
+              <img
+                src={perfectLivingWombCover}
+                alt="Cover of The Perfect Living Womb: Conversations with My Virtual Pregnant Patient"
+                className="publication-cover"
+              />
+            </div>
+            <div className="publication-copy">
+              <div className="mini-eyebrow">Publications</div>
+              <h2>The Perfect Living Womb</h2>
+              <p className="publication-subtitle">
+                <em>A Prenatal Guide for Preparing for Pregnancy and What to Expect</em>
+              </p>
+              <p>
+                Dr. Rezvani is the author of <em>The Perfect Living Womb: Conversations with My
+                Virtual Pregnant Patient</em>, a prenatal guide developed to help patients prepare
+                for pregnancy and better understand what to expect throughout each stage.
+              </p>
+              <p>
+                Published in 2020, the book is available in paperback and e-book formats on
+                Amazon.
+              </p>
+              <a
+                className="button button-small"
+                href="https://www.amazon.com/perfect-Conversations-virtual-pregnant-patient/dp/B089CQK28Y"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View on Amazon
+              </a>
+            </div>
+          </div>
         </section>
 
         <section className="section section-inner office-gallery-section">
