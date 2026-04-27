@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
-import { practiceInfo } from '../siteContent';
+import TestimonialCard from '../components/TestimonialCard';
+import { patientTestimonials, practiceInfo } from '../siteContent';
 import officeExamRoom from '../assets/office-exam-room.jpeg';
 import officeHallway from '../assets/office-hallway.jpeg';
 import officeExteriorFront from '../assets/office-exterior-front.jpeg';
 import perfectLivingWombCover from '../assets/perfect-living-womb-cover.jpg';
+
+const healthgradesProfileUrl = 'https://www.healthgrades.com/physician/dr-fred-rezvani-3gmqr';
 
 const homepageServices = [
   {
@@ -224,21 +227,38 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <div className="section-heading compact-heading fade-up">
-            <div className="eyebrow">Testimonials</div>
-            <h2>Patient feedback coming soon</h2>
+            <div className="eyebrow">Patient Feedback</div>
+            <h2>What patients are saying</h2>
             <p>
-              This section is ready for future testimonials and can be updated when you are ready to
-              add them.
+              Selected Google reviews shared with the practice and featured here as testimonial
+              cards.
             </p>
           </div>
           <div className="card-grid testimonials-grid">
-            {[1, 2].map((item) => (
-              <article key={item} className="service-card premium-card testimonial-placeholder fade-up">
-                <div className="mini-eyebrow">Coming soon</div>
-                <h3>Testimonial placeholder</h3>
-                <p>Space reserved for future patient testimonials.</p>
-              </article>
+            {patientTestimonials.slice(0, 3).map((item) => (
+              <TestimonialCard
+                key={item.name}
+                name={item.name}
+                quote={item.quote}
+                rating={item.rating}
+              />
             ))}
+          </div>
+          <div className="testimonial-source premium-card fade-up">
+            
+            <p>
+              You can also view Dr. Rezvani&apos;s public Healthgrades profile for an additional
+              review source, it listed a <strong>4.4 out of 5</strong>{' '}
+              rating based on <strong>99 reviews</strong>.
+            </p>
+            <div className="testimonial-source-actions">
+              <a className="button" href={healthgradesProfileUrl} target="_blank" rel="noreferrer">
+                View Healthgrades reviews
+              </a>
+              <Link className="button button-secondary" to="/testimonials">
+                View testimonials page
+              </Link>
+            </div>
           </div>
         </div>
       </section>

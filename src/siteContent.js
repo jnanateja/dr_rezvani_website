@@ -52,6 +52,51 @@ export const heroHighlights = [
   'In-office evaluation and procedures',
 ];
 
+export const patientTestimonials = [
+  {
+    name: 'Kimmie Campoverde',
+    rating: 5,
+    quote:
+      'Dr. Rezvani is amazing. He delivered my baby sister from my mother and consistently treats my sister and I as well for gynecology. The office is very clean and he is VERY thorough. I’ve been through many gynecologists but I know he actually cares so my family has stuck here. I needed an emergency appt after going to ER for some pelvic pain and a cyst on my ovary and they took me the same day without a fight. If you’re in the area I recommend to come here I promise you’ll feel highly taken care of.',
+  },
+  {
+    name: 'Donna Khatami',
+    rating: 5,
+    quote:
+      'I have been a patient of Dr Rezvani\'s for many years and he is an amazing doctor. He truly cares for his patients and make you feel so comfortable during your appointments. He always listens to all my concerns and addresses all questions! I can\'t recommend him enough he is the best!',
+  },
+  {
+    name: 'Jennifer Harcher',
+    rating: 5,
+    quote:
+      'Dr. Rezvani is hands down one of the best doctors around. He is so attentive, and thorough and caring. I have been going to him for 18 years now. He delivered both my second and third child who are now both adults. I am forever grateful that I had him when he was still delivering babies. He saved my life and my daughters. I trust him entirely. There are not many doctors left like him. I can’t forget his staff. They are very friendly too.',
+  },
+  {
+    name: 'Dominique Gervais',
+    rating: 5,
+    quote:
+      'Rezvani is the absolute best! He always ensures you stay healthy and he is very efficient! You can also tell he genuinely cares about his patients! I’ve been with him since I was a baby he was the doctor that birthed me! And ever since he is who I went to. He also has great and friendly staff.',
+  },
+  {
+    name: 'Amanda Venezia',
+    rating: 5,
+    quote:
+      'Dr. Rezvani continues to be one of the most amazing doctors and people I’ve ever encountered. I moved away for almost 8 years and came back and it was like no time had passed. His bedside manner is unmatched. He makes you feel comfortable and at ease. And the front desk staff is so nice and pleasant! Can’t recommend this place enough!',
+  },
+  {
+    name: 'Miranda Coyle',
+    rating: 5,
+    quote:
+      'Dr Rezvani has been my doctor for over 28 years. He has delivered all 3 of my children. He always makes you feel like you’re the only patient he has that day. I never feel rushed. He is the very best doctor. Now he helps me as I approach the next stage in life.',
+  },
+  {
+    name: 'Adrienne Tamboia',
+    rating: 5,
+    quote:
+      'I have been seeing Dr. Rezvani for 13 years now! It was a blessing that I found him and had 2 beautiful girls under his care. I see him for my annual visits and even minor surgery that I wouldn’t trust anyone else to do. He is genuine and kind and always looks out for the best for his patients.',
+  },
+];
+
 export const serviceCategories = [
   {
     title: 'Gynecologic Care',
