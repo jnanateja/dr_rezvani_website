@@ -3,6 +3,7 @@ import TestimonialCard from '../components/TestimonialCard';
 import { patientTestimonials } from '../siteContent';
 
 const healthgradesProfileUrl = 'https://www.healthgrades.com/physician/dr-fred-rezvani-3gmqr';
+const usNewsProfileUrl = 'https://health.usnews.com/doctors/fred-rezvani-15271';
 
 export default function TestimonialsPage() {
   return (
@@ -28,14 +29,17 @@ export default function TestimonialsPage() {
         <div className="testimonial-source premium-card fade-up">
           
           <p>
-            For an additional public review source, the Healthgrades profile listed a <strong>4.4
-            out of 5</strong> rating based on <strong>99 reviews</strong>
+            Dr. Rezvani is rated <strong>4.4/5 on Healthgrades</strong> and{' '}
+            <strong>5/5 on U.S. News</strong>.
           </p>
           <div className="testimonial-source-actions">
             <a className="button" href={healthgradesProfileUrl} target="_blank" rel="noreferrer">
               View Healthgrades reviews
             </a>
-            <Link className="button button-secondary" to="/contact">
+            <a className="button" href={usNewsProfileUrl} target="_blank" rel="noreferrer">
+              View U.S. News profile
+            </a>
+            <Link className="button" to="/contact">
               Contact the office
             </Link>
           </div>

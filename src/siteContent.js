@@ -95,6 +95,90 @@ export const patientTestimonials = [
     quote:
       'I have been seeing Dr. Rezvani for 13 years now! It was a blessing that I found him and had 2 beautiful girls under his care. I see him for my annual visits and even minor surgery that I wouldn’t trust anyone else to do. He is genuine and kind and always looks out for the best for his patients.',
   },
+  {
+    name: 'Emily Toal',
+    rating: 5,
+    quote:
+      'Dr Rezvani is THE ABSOLUTE BEST OBGYN in the entire world!! He sincerely cares about his patients and is overly thorough and a fabulous diagnostician!! He is compassionate and really cares about each individuals well being! He also gives the most amazing C section ever! I absolutely LOVE this man! Dr Rezvani deserves 10 STARS because he is that amazing!',
+  },
+  {
+    name: 'Marj M',
+    rating: 5,
+    quote:
+      'Dr. Rezvani is one of a kind! I have been a patient of his for 8 years and every single visit he always gives me his undivided attention. I never feel rushed. He is extremely knowledgeable and is truly the best.',
+  },
+  {
+    name: 'Lauren G',
+    rating: 5,
+    quote:
+      'I had an appointment with Dr. Rezvani a few weeks back. Most offices take a while to see the doctor but he was super quick to see me. During my appointment, I could tell he was fully present. He asked enough questions to understand my condition and had a thorough explanation of how to remediate it. I feel Dr. Rezvani genuinely cares about his patients.',
+  },
+  {
+    name: 'Yuliya Plytych',
+    rating: 5,
+    quote:
+      'If I could give million stars, I would...! Absolutely the best doctor that I ever had and I wish there was more doctors like Dr Rezvani. I felt very comfortable and confident during my pregnancy with Dr Rezvani and I knew that I’m in great hand if anything happens.',
+  },
+  {
+    name: 'Olga Gould',
+    rating: 5,
+    quote:
+      'Dr. Fred Rezvani is THE BEST! I’ve been with him for 15 years, and wouldn’t trade him for the world. He is thorough, knowledgeable, compassionate and caring. He puts his patients above all, especially those expecting. He specializes in high risk pregnancies and has an open door policy for the mommy-to-be to put her mind at ease. This makes for a comfortable, safe and trusting patient/doctor relationship which I cherish. His staff is just as caring and friendly- it’s a Healthcare 2000 family! I would highly recommend Dr. Rezvani.',
+  },
+  {
+    name: 'Singh Singh',
+    rating: 5,
+    quote:
+      'Dr Rezvani is such an amazing doctor and cares so much about his patients! I would recommend him to anyone looking for a great doctor who takes his time understanding each patient and helping them by going above and beyond.',
+  },
+  {
+    name: 'Ava Khatami',
+    rating: 5,
+    quote:
+      'Dr. Fred Rezvani is the absolute best; I have been a patient for over 10 years! He is incredibly thorough, actually spends time with you during your appointment, and his staff is incredibly welcoming!',
+  },
+  {
+    name: 'Joanna Paziewska',
+    rating: 5,
+    quote:
+      'The most amazing doctor I have ever had. He delivered my twins a few years ago and as long as you are following his directions you are as safe as possible in high risk pregnancy. Mine was high risk with additional complications and kids were born on time and healthy. He truly cares and now it’s a very rare trait. Amazing OB too but he is very busy so with emergencies you will get response right away but with less pressing issues you will need to wait for a while. Last part which is amazing about Dr Rezvani is the extension of his knowledge which is way beyond any other doctor I ever met.',
+  },
+  {
+    name: 'Ivy Tasha',
+    rating: 5,
+    quote:
+      'Dr Rezvani is the most caring doctor I have ever known. His expertise and attention to detail is second to none. He has supported me through multiple issues with the utmost of concern and dedication. He delivered both of my children and I wouldn’t have it any other way. His staff is equally as kind and friendly.',
+  },
+  {
+    name: 'KE',
+    rating: 5,
+    quote:
+      'I highly recommend Dr. Rezvani as a doctor. His knowledge and attention to every detail is not only amazing, but extremely reassuring to a new mom. He delivered both of my children in high risk situations and was nothing but caring and thorough throughout. My husband even wishes he was his doctor too!',
+  },
+  {
+    name: 'Brooke Karca',
+    rating: 5,
+    quote:
+      'Dr Fred Rezvani, not only a regular basic Gynecologist!!! He is an Amazing Professor Doctor, very genuine. He checks every detail, he pays full attention to your health he takes his time, his office staffs are very welcoming and helpful. I highly recommended.',
+  },
+  {
+    name: 'Dee Rob',
+    rating: 5,
+    quote:
+      'Dr Rezvani is an excellent physician who takes the time to give you a thorough physical examination. Moreover, he cares about you as if you were a member of his own family. He has high standards and takes abnormal results very seriously. He is intense and thorough and I feel very safe in his care.',
+  },
+  {
+    name: 'Claudina Torres',
+    rating: 5,
+    quote:
+      'Dr. Rezvani is absolutely the best. I’ve been seeing him since I was a pre-teen. Now, he has delivered both my children. Both him and his staff make you feel comfortable. The office is very clean as well. Dr. Rezvani is caring, gentle, extremely knowledgeable, compassionate and goes above and beyond for your care. He is a blessing and the best around hands down!',
+  },
+  {
+    name: 'Nurcie Schafer',
+    rating: 5,
+    quote:
+      'Dr. Rezvani is the most important doctor in my life. I ask for his opinion on everything. He delivered my daughter, niece and nephew. I completely trust him. And yes he actually does save lives. Very skilled and very smart. I’ve seen him do amazing things at work. When I was admitted as a patient with the flu/pneumonia, he came to see me and arranged the chief of pulmonology to come to take care of me. Above and beyond. His office is newly decorated and I never have to wait long. Nurse Arlene is so nice and the rest of the staff is as well. I always get a call back and my meds and tests/prescriptions are faxed the same day.',
+  },
 ];
 
 export const serviceCategories = [

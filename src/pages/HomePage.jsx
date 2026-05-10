@@ -8,6 +8,7 @@ import officeExteriorFront from '../assets/office-exterior-front.jpeg';
 import perfectLivingWombCover from '../assets/perfect-living-womb-cover.jpg';
 
 const healthgradesProfileUrl = 'https://www.healthgrades.com/physician/dr-fred-rezvani-3gmqr';
+const usNewsProfileUrl = 'https://health.usnews.com/doctors/fred-rezvani-15271';
 
 const homepageServices = [
   {
@@ -229,10 +230,6 @@ export default function HomePage() {
           <div className="section-heading compact-heading fade-up">
             <div className="eyebrow">Patient Feedback</div>
             <h2>What patients are saying</h2>
-            <p>
-              Selected Google reviews shared with the practice and featured here as testimonial
-              cards.
-            </p>
           </div>
           <div className="card-grid testimonials-grid">
             {patientTestimonials.slice(0, 3).map((item) => (
@@ -247,15 +244,17 @@ export default function HomePage() {
           <div className="testimonial-source premium-card fade-up">
             
             <p>
-              You can also view Dr. Rezvani&apos;s public Healthgrades profile for an additional
-              review source, it listed a <strong>4.4 out of 5</strong>{' '}
-              rating based on <strong>99 reviews</strong>.
+              Dr. Rezvani is rated <strong>4.4/5 on Healthgrades</strong> and{' '}
+              <strong>5/5 on U.S. News</strong>.
             </p>
             <div className="testimonial-source-actions">
               <a className="button" href={healthgradesProfileUrl} target="_blank" rel="noreferrer">
                 View Healthgrades reviews
               </a>
-              <Link className="button button-secondary" to="/testimonials">
+              <a className="button" href={usNewsProfileUrl} target="_blank" rel="noreferrer">
+                View U.S. News profile
+              </a>
+              <Link className="button" to="/testimonials">
                 View testimonials page
               </Link>
             </div>
