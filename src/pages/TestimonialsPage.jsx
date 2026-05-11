@@ -15,22 +15,13 @@ export default function TestimonialsPage() {
           
         </div>
 
-        <div className="card-grid testimonials-grid">
-          {patientTestimonials.map((item) => (
-            <TestimonialCard
-              key={item.name}
-              name={item.name}
-              quote={item.quote}
-              rating={item.rating}
-            />
-          ))}
-        </div>
-
         <div className="testimonial-source premium-card fade-up">
           
           <p>
-            Dr. Rezvani is rated <strong>4.4/5 on Healthgrades</strong> and{' '}
-            <strong>5/5 on U.S. News</strong>.
+            Dr. Fred Rezvani always appreciates feedback from his valued patients. He is
+            rated <strong>4.4/5 on Healthgrades</strong> and <strong>5/5 on U.S. News</strong>.
+            Please read what others are saying about Dr. Rezvani below, and as always, the
+            office would love to hear your feedback.
           </p>
           <div className="testimonial-source-actions">
             <a className="button" href={healthgradesProfileUrl} target="_blank" rel="noreferrer">
@@ -43,6 +34,17 @@ export default function TestimonialsPage() {
               Contact the office
             </Link>
           </div>
+        </div>
+
+        <div className="card-grid testimonials-grid">
+          {patientTestimonials.map((item) => (
+            <TestimonialCard
+              key={item.name}
+              name={item.name}
+              quote={item.quote}
+              rating={item.rating}
+            />
+          ))}
         </div>
       </div>
     </section>

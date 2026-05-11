@@ -1437,7 +1437,7 @@ p {
 .testimonial-source {
   display: grid;
   gap: 0.8rem;
-  margin-top: 1.2rem;
+  margin: 1.2rem 0 2rem;
   padding: 1.4rem 1.5rem;
 }
 
